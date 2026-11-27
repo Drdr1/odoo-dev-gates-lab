@@ -36,7 +36,7 @@
                         <field name="visit_date" />
                         <field name="company_id" groups="base.group_multi_company" />
                     </group>
-                    <field name="notes" />
+                    <field name="notes" string="Internal Notes" />
                 </sheet>
             </form>
         </field>
