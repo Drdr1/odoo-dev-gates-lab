@@ -4,13 +4,13 @@
         <field name="name">acme.visit.log.list</field>
         <field name="model">acme.visit.log</field>
         <field name="arch" type="xml">
-            <list string="Visits">
+            <tree string="Visits">
                 <field name="visit_date" />
                 <field name="partner_id" />
                 <field name="name" />
                 <field name="state" />
                 <field name="company_id" groups="base.group_multi_company" />
-            </list>
+            </tree>
         </field>
     </record>
 
@@ -25,7 +25,7 @@
                         type="object"
                         string="Mark Done"
                         class="btn-primary"
-                        invisible="state == 'done'"
+                        attrs="{'invisible': [('state', '=', 'done')]}"
                     />
                     <field name="state" widget="statusbar" />
                 </header>
