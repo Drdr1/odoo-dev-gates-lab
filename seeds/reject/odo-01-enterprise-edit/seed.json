@@ -1,0 +1,8 @@
+{
+  "codes": [
+    "ODO-01"
+  ],
+  "branch": "feature/seed-odo-01-enterprise-edit",
+  "title": "fix(reports): patch the tax report total",
+  "summary": "A copied and edited Enterprise file instead of an _inherit extension."
+}

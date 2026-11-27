@@ -1,0 +1,6 @@
+{
+  "codes": [],
+  "branch": "feature/seed-clean-field-change",
+  "title": "feat(visit_log): record visit duration",
+  "summary": "The same field as the ODO-06 seed, done properly: version bump, migration script, Arabic label and a test. This one must pass."
+}

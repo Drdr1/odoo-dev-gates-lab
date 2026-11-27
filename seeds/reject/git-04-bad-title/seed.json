@@ -1,0 +1,9 @@
+{
+  "codes": [
+    "GIT-04"
+  ],
+  "ci_only": true,
+  "branch": "feature/seed-git-04-bad-title",
+  "title": "updated the readme",
+  "summary": "The code is fine. The pull request title is not a Conventional Commit."
+}

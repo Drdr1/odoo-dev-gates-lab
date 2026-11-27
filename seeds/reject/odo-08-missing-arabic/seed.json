@@ -1,0 +1,8 @@
+{
+  "codes": [
+    "ODO-08"
+  ],
+  "branch": "feature/seed-odo-08-missing-arabic",
+  "title": "feat(visit_log): relabel the notes field",
+  "summary": "New user-facing label 'Internal Notes' with no entry in i18n/ar.po."
+}

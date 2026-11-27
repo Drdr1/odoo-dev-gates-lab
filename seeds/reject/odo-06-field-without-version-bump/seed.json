@@ -1,0 +1,8 @@
+{
+  "codes": [
+    "ODO-06"
+  ],
+  "branch": "feature/seed-odo-06-no-version-bump",
+  "title": "feat(visit_log): record visit duration",
+  "summary": "New field with its Arabic label, but the manifest version is unchanged and there is no migration script."
+}

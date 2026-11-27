@@ -1,0 +1,50 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* acme_visit_log
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0\n"
+"Language: ar\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Subject"
+msgstr "الموضوع"
+
+msgid "Customer"
+msgstr "العميل"
+
+msgid "Visit Date"
+msgstr "تاريخ الزيارة"
+
+msgid "Company"
+msgstr "الشركة"
+
+msgid "Status"
+msgstr "الحالة"
+
+msgid "Draft"
+msgstr "مسودة"
+
+msgid "Done"
+msgstr "منتهية"
+
+msgid "Notes"
+msgstr "ملاحظات"
+
+msgid "Visits"
+msgstr "الزيارات"
+
+msgid "Visit"
+msgstr "زيارة"
+
+msgid "Mark Done"
+msgstr "إنهاء الزيارة"
+
+msgid "Visit Logs"
+msgstr "سجل الزيارات"
+
+msgid "Duration Minutes"
+msgstr "المدة بالدقائق"

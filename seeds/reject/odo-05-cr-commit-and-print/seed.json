@@ -1,0 +1,8 @@
+{
+  "codes": [
+    "ODO-05"
+  ],
+  "branch": "feature/seed-odo-05-cr-commit",
+  "title": "feat(visit_log): close all open visits in bulk",
+  "summary": "Bulk action that calls cr.commit() inside a loop and debugs with print(). Tests are included, so only ODO-05 fires."
+}

@@ -1,0 +1,19 @@
+# Everything that defines or enforces the rules is owned by the platform team.
+# An AI reviewer's approval is not enough for these paths, because the reviewer
+# reads its instructions from the pull request branch and a developer could
+# rewrite them to pass their own change.
+#
+# Code under /addons/ has no owner on purpose: there the gates and the
+# automatic review decide.
+
+/.github/                 @Drdr1
+/AGENTS.md                @Drdr1
+/tools/                   @Drdr1
+/seeds/                   @Drdr1
+/tests_gates/             @Drdr1
+/rulesets/                @Drdr1
+/scripts/                 @Drdr1
+/.pre-commit-config.yaml  @Drdr1
+/.pylintrc                @Drdr1
+/requirements-ci.in       @Drdr1
+/requirements-ci.txt      @Drdr1

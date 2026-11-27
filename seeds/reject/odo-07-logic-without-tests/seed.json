@@ -1,0 +1,8 @@
+{
+  "codes": [
+    "ODO-07"
+  ],
+  "branch": "feature/seed-odo-07-no-tests",
+  "title": "feat(visit_log): allow reopening a visit",
+  "summary": "New business method with no new or updated test."
+}

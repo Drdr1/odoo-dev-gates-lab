@@ -1,0 +1,8 @@
+{
+  "codes": [
+    "GIT-07"
+  ],
+  "branch": "feature/seed-git-07-env-and-dump",
+  "title": "chore: add local environment files",
+  "summary": "Commits a .env file and a database dump. The values are placeholders, not real secrets."
+}

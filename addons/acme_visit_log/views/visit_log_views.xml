@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="acme_visit_log_view_list" model="ir.ui.view">
+        <field name="name">acme.visit.log.list</field>
+        <field name="model">acme.visit.log</field>
+        <field name="arch" type="xml">
+            <list string="Visits">
+                <field name="visit_date" />
+                <field name="partner_id" />
+                <field name="name" />
+                <field name="state" />
+                <field name="company_id" groups="base.group_multi_company" />
+            </list>
+        </field>
+    </record>
+
+    <record id="acme_visit_log_view_form" model="ir.ui.view">
+        <field name="name">acme.visit.log.form</field>
+        <field name="model">acme.visit.log</field>
+        <field name="arch" type="xml">
+            <form string="Visit">
+                <header>
+                    <button
+                        name="action_done"
+                        type="object"
+                        string="Mark Done"
+                        class="btn-primary"
+                        invisible="state == 'done'"
+                    />
+                    <field name="state" widget="statusbar" />
+                </header>
+                <sheet>
+                    <group>
+                        <field name="name" />
+                        <field name="partner_id" />
+                        <field name="visit_date" />
+                        <field name="company_id" groups="base.group_multi_company" />
+                    </group>
+                    <field name="notes" />
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="acme_visit_log_action" model="ir.actions.act_window">
+        <field name="name">Visit Logs</field>
+        <field name="res_model">acme.visit.log</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+    <menuitem
+        id="acme_visit_log_menu"
+        name="Visit Logs"
+        action="acme_visit_log_action"
+        sequence="90"
+    />
+</odoo>

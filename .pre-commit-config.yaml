@@ -1,0 +1,27 @@
+# Install once per clone:  pre-commit install
+# The same checks run in CI, so skipping the hook locally changes nothing.
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: cef0300fd0fc4d2a87a85fa2093c6b283ea36f4b # v5.0.0
+    hooks:
+      - id: check-added-large-files
+        args: ["--maxkb=10240"]
+      - id: detect-private-key
+      - id: check-xml
+      - id: check-merge-conflict
+
+  - repo: https://github.com/OCA/pylint-odoo
+    rev: 30224d0a2ae20645b197776358a734d81197aafc # v10.0.12
+    hooks:
+      - id: pylint_odoo
+        args: ["--rcfile=.pylintrc"]
+        files: ^addons/
+
+  - repo: local
+    hooks:
+      - id: odoo-gates
+        name: Odoo gates (ODO-01 to ODO-08, GIT-07)
+        entry: python tools/odoo_gates.py
+        language: system
+        pass_filenames: false
+        always_run: true

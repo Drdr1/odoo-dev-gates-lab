@@ -1,0 +1,8 @@
+{
+  "codes": [
+    "ODO-02"
+  ],
+  "branch": "feature/seed-odo-02-tree-and-attrs",
+  "title": "refactor(visit_log): tidy the visit list view",
+  "summary": "List view written with Odoo 17 syntax: <tree> and attrs=."
+}

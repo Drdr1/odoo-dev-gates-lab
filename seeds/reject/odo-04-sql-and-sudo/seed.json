@@ -1,0 +1,8 @@
+{
+  "codes": [
+    "ODO-04"
+  ],
+  "branch": "feature/seed-odo-04-sql-and-sudo",
+  "title": "feat(visit_log): find visits by subject",
+  "summary": "Search method that builds SQL with an f-string and calls sudo() with no stated reason."
+}

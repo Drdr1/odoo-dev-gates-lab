@@ -1,0 +1,11 @@
+[MASTER]
+load-plugins=pylint_odoo
+ignore-patterns=.*-migrate\.py
+
+[ODOOLINT]
+valid-odoo-versions=18.0
+manifest-required-authors=Acme
+
+[MESSAGES CONTROL]
+disable=all
+enable=odoolint

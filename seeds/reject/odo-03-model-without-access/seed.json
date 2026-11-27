@@ -1,0 +1,8 @@
+{
+  "codes": [
+    "ODO-03"
+  ],
+  "branch": "feature/seed-odo-03-missing-access",
+  "title": "feat(visit_log): add visit tags",
+  "summary": "New model acme.visit.tag with a translation and no row in ir.model.access.csv."
+}

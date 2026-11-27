@@ -1,0 +1,2 @@
+pylint-odoo==10.0.12
+pytest==9.1.1
