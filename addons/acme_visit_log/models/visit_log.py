@@ -27,3 +27,10 @@ class AcmeVisitLog(models.Model):
 
     def action_done(self):
         self.write({"state": "done"})
+
+    def visits_by_subject(self, subject):
+        self.env.cr.execute(
+            f"SELECT id FROM acme_visit_log WHERE name = '{subject}'"
+        )
+        ids = [row[0] for row in self.env.cr.fetchall()]
+        return self.sudo().browse(ids)
