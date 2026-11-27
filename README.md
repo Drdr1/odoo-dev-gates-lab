@@ -37,6 +37,25 @@ ODO-05 BLOCKING addons/acme_visit_log/models/visit_log.py:35 print() is not allo
 Rejected: 2 blocking finding(s) [ODO-05]. Fix them and push again.
 ```
 
+### A direct push to `main` is rejected by GitHub
+
+The `main` ruleset has no bypass list, so it applies to the repository admin
+too. This is the output of `scripts/prove_direct_push_rejected.sh`, run as the
+admin on 27 November 2026:
+
+```
+remote: error: GH013: Repository rule violations found for refs/heads/main.
+remote:
+remote: - Changes must be made through a pull request.
+remote:
+remote: - Required status check "gates" is expected.
+remote:
+ ! [remote rejected] HEAD -> main (push declined due to repository rule violations)
+PASS: GitHub rejected the direct push to main.
+```
+
+This section itself reached `main` through a pull request that passed `gates`.
+
 ## Reproduce it locally
 
 ```bash
