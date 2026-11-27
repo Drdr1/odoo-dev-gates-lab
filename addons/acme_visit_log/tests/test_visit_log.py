@@ -20,3 +20,7 @@ class TestVisitLog(TransactionCase):
     def test_action_done(self):
         self.visit.action_done()
         self.assertEqual(self.visit.state, "done")
+
+    def test_visits_by_subject(self):
+        found = self.visit.visits_by_subject("Quarterly review")
+        self.assertIn(self.visit, found)
