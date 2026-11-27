@@ -27,3 +27,6 @@ class AcmeVisitLog(models.Model):
 
     def action_done(self):
         self.write({"state": "done"})
+
+    def action_reopen(self):
+        self.write({"state": "draft"})
