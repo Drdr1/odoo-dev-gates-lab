@@ -45,3 +45,6 @@ msgstr "إنهاء الزيارة"
 
 msgid "Visit Logs"
 msgstr "سجل الزيارات"
+
+msgid "Duration Minutes"
+msgstr "المدة بالدقائق"
