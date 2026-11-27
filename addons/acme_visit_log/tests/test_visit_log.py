@@ -20,3 +20,6 @@ class TestVisitLog(TransactionCase):
     def test_action_done(self):
         self.visit.action_done()
         self.assertEqual(self.visit.state, "done")
+
+    def test_duration_defaults_to_zero(self):
+        self.assertEqual(self.visit.duration_minutes, 0)
