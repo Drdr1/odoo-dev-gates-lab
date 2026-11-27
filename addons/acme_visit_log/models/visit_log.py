@@ -19,6 +19,7 @@ class AcmeVisitLog(models.Model):
         required=True,
     )
     notes = fields.Text()
+    duration_minutes = fields.Integer()
 
     @api.depends("name", "partner_id.name")
     def _compute_display_name(self):
