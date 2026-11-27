@@ -27,3 +27,9 @@ class AcmeVisitLog(models.Model):
 
     def action_done(self):
         self.write({"state": "done"})
+
+    def action_close_all(self):
+        for visit in self:
+            visit.state = "done"
+            self.env.cr.commit()
+        print("closed", len(self))

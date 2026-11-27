@@ -20,3 +20,7 @@ class TestVisitLog(TransactionCase):
     def test_action_done(self):
         self.visit.action_done()
         self.assertEqual(self.visit.state, "done")
+
+    def test_action_close_all(self):
+        self.visit.action_close_all()
+        self.assertEqual(self.visit.state, "done")
